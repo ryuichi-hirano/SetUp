@@ -11,9 +11,9 @@ echo "Starting Homebrew Installation..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Homebrew Installation: Completed"
 
-touch ~/.zprofile
-echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/yilee/.zprofile
-eval $(/opt/homebrew/bin/brew shellenv)
+# touch ~/.zprofile
+# echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/yilee/.zprofile
+# eval $(/opt/homebrew/bin/brew shellenv)
 
 # Installation of formulas
 echo 'Starting formulas installation...'
@@ -282,7 +282,11 @@ conda config --set auto_activate_base false
 ### Setup .zprofile ###
 
 echo "Setting up ~/.zprofile..."
+
+touch ~/.zprofile
 cat <<EOS > ~/.zprofile
+# brew
+eval $(/opt/homebrew/bin/brew shellenv)
 
 # Environment
 export LANG="en_US.UTF-8"
