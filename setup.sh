@@ -47,9 +47,9 @@ sudo -S scutil --set HostName "$HOME.HOST"
 
 ### Finder ###
 # Finder sidebar
-mysides add $HOME file://$HOME/
-mysides remove Desktop
-mysides remove Documents
+# mysides add $HOME file://$HOME/
+# mysides remove Desktop
+# mysides remove Documents
 
 # Delete tags from sidebar
 defalts write com.apple.finder ShowRecentTags -bool false
