@@ -290,7 +290,7 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 EOS
-echo"Setting up ~/.zprofile: Complete"
+echo "Setting up ~/.zprofile: Complete"
 ### End of .zprofile ###
 
 ### Install from Appstore ###
