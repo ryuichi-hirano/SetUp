@@ -299,18 +299,18 @@ echo "Please login with your Apple ID."
 open -a "App Store"
 read -p "Press [Enter] key to resume setup..."
 
-mas install 408981434  # imovie
-mas install 409183694  # keynote
-mas install 409201541  # pages
-mas install 409203825  # numbers
+# mas install 408981434  # imovie
+# mas install 409183694  # keynote
+# mas install 409201541  # pages
+# mas install 409203825  # numbers
 # mas install 441258766  # Magnet
-mas install 485812721  # TweetDeck
-mas install 497799835  # Xcode
-mas install 1444383602 # GoodNotes
-mas install 462054704  # Microsoft Word
-mas install 462058435  # Microsoft Excel
-mas install 462062816  # Microsoft PowerPoint
-mas install 936243210  # MiniPlay for Spotify & iTunes
+# mas install 485812721  # TweetDeck
+# mas install 497799835  # Xcode
+# mas install 1444383602 # GoodNotes
+# mas install 462054704  # Microsoft Word
+# mas install 462058435  # Microsoft Excel
+# mas install 462062816  # Microsoft PowerPoint
+# mas install 936243210  # MiniPlay for Spotify & iTunes
 
 echo "Installing Apps from AppStore Completde"
 
