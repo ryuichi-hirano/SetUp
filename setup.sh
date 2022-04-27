@@ -35,6 +35,7 @@ brew install slack --cask
 brew install spotify --cask
 brew install zoom --cask
 brew install visual-studio-code --cask
+brew install mysides
 echo 'Casks installation completed'
 
 ################################################################################
