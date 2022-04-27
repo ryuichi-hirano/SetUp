@@ -34,6 +34,7 @@ brew install iterm2 --cask
 brew install slack --cask
 brew install spotify --cask
 brew install zoom --cask
+brew install visual-studio-code --cask
 echo 'Casks installation completed'
 
 ################################################################################
