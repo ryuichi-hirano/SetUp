@@ -303,7 +303,7 @@ mas install 408981434  # imovie
 mas install 409183694  # keynote
 mas install 409201541  # pages
 mas install 409203825  # numbers
-mas install 441258766  # Magnet
+# mas install 441258766  # Magnet
 mas install 485812721  # TweetDeck
 mas install 497799835  # Xcode
 mas install 1444383602 # GoodNotes
