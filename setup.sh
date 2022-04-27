@@ -11,6 +11,7 @@ echo "Starting Homebrew Installation..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Homebrew Installation: Completed"
 
+touch ~/.zprofile
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/yilee/.zprofile
 eval $(/opt/homebrew/bin/brew shellenv)
 
@@ -279,8 +280,6 @@ conda config --set auto_activate_base false
 ### End of miniforge ###
 
 ### Setup .zprofile ###
-
-touch ~/.zprofile
 
 echo "Setting up ~/.zprofile..."
 cat <<EOS > ~/.zprofile
