@@ -314,25 +314,3 @@ echo "<<< macOS Environment Configurator from Ryuichi Hirano(based on tyl's) >>>
 echo "END....."
 echo "Rebooting machine..."
 sudo shutdown -r now
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
