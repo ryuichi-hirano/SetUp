@@ -279,6 +279,9 @@ conda config --set auto_activate_base false
 ### End of miniforge ###
 
 ### Setup .zprofile ###
+
+touch ~/.zprofile
+
 echo "Setting up ~/.zprofile..."
 cat <<EOS > ~/.zprofile
 
