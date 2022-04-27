@@ -52,7 +52,7 @@ sudo -S scutil --set HostName "$HOME.HOST"
 # mysides remove Documents
 
 # Delete tags from sidebar
-defalts write com.apple.finder ShowRecentTags -bool false
+defaults write com.apple.finder ShowRecentTags -bool false
 
 # Change default view as column
 defaults write com.apple.finder FXPreferredViewStyle clmv
