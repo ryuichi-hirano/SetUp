@@ -227,7 +227,7 @@ defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false
 ### Set Default Browser ###
 # Set chrome as default browser
 open -a "Google Chrome" --args --make-default-browser
-read -p "Setup Google Chrome. Press [Enter] key to resume setup..."
+# read -p "Setup Google Chrome. Press [Enter] key to resume setup..."
 
 ### End of Set Default Browser ###
 
@@ -244,10 +244,10 @@ dscacheutil -flushcache
 ### End of Other ###
 
 # Reboot Dock, Finder and SystemUIServer
-killall Dock
-killall Finder
-killall SystemUIServer
-killall Dock
+sudo killall Dock
+sudo killall Finder
+sudo killall SystemUIServer
+sudo killall Dock
 echo "Rebooting all above-metioned after 5s..."
 sleep 5
 echo "Setting up System Preference: Complete"
