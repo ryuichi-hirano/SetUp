@@ -317,5 +317,6 @@ echo "Installing Apps from AppStore Completde"
 echo "Congraturations... All DONE!!!"
 echo "<<< macOS Environment Configurator from Ryuichi Hirano(based on tyl's) >>>"
 echo "END....."
-echo "Rebooting machine..."
+echo "Reboot machine 10s later..."
+sleep 10
 sudo shutdown -r now
