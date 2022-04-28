@@ -258,12 +258,6 @@ echo "Setting up System Preference: Complete"
 ### Setup pyenv ###
 # make .zshrc
 touch ~/.zshrc
-cat <<EOS > ~/.zshrc
-arch=`uname -m`
-if [ "$arch" = "arm64" ]; then
-    source ~/.pyenv/versions/miniforge3-4.10.3-10/bin/activate
-fi
-EOS
 
 # set pyenv on zshrc
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
@@ -284,6 +278,23 @@ pyenv global miniforge3-4.10.1-5
 conda config --set auto_activate_base false
 
 ### End of miniforge ###
+
+# make .zshrc
+touch ~/.zshrc
+cat <<EOS > ~/.zshrc
+arch=`uname -m`
+if [ "$arch" = "arm64" ]; then
+    source ~/.pyenv/versions/miniforge3-4.10.3-10/bin/activate
+fi
+EOS
+
+# set pyenv on zshrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+
+source ~/.zshrc
 
 ### Setup .zprofile ###
 
