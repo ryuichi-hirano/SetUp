@@ -258,6 +258,12 @@ echo "Setting up System Preference: Complete"
 ### Setup pyenv ###
 # make .zshrc
 touch ~/.zshrc
+cat <<EOS > ~/.zshrc
+arch=`uname -m`
+if [ "$arch" = "arm64" ]; then
+    source ~/.pyenv/versions/miniforge3-4.10.3-10/bin/activate
+fi
+EOS
 
 # set pyenv on zshrc
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
