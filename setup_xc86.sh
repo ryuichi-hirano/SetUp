@@ -271,8 +271,8 @@ source ~/.zshrc
 ### End of puenv ###
 
 ### Install miniforge ###
-pyenv install miniforge3-4.10.1-5
-pyenv global miniforge3-4.10.1-5
+pyenv install miniforge3-4.10.3-10
+pyenv global miniforge3-4.10.3-10
 
 # Enable auto_activate_base
 conda config --set auto_activate_base false
