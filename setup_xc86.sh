@@ -280,16 +280,7 @@ conda config --set auto_activate_base false
 ### End of miniforge ###
 
 # make .zshrc
-touch ~/.zshrc
-cat <<EOS > ~/.zshrc
-source ~/.pyenv/versions/miniforge3-4.10.3-10/bin/activate
-EOS
-
-# set pyenv on zshrc
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+echo 'source ~/.pyenv/versions/miniforge3-4.10.3-10/bin/activate' >> ~/.zshrc
 
 source ~/.zshrc
 
