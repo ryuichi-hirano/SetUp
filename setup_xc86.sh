@@ -12,7 +12,7 @@ echo "Starting Homebrew Installation..."
 echo "Homebrew Installation: Completed"
 
 touch ~/.zprofile
-echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/yilee/.zprofile
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
 eval $(/opt/homebrew/bin/brew shellenv)
 
 # Installation of formulas
