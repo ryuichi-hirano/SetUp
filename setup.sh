@@ -12,7 +12,7 @@ echo "Starting Homebrew Installation..."
 echo "Homebrew Installation: Completed"
 
 touch ~/.zprofile
-echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/yilee/.zprofile
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
 eval $(/opt/homebrew/bin/brew shellenv)
 
 # Installation of formulas
@@ -271,8 +271,8 @@ source ~/.zshrc
 ### End of puenv ###
 
 ### Install miniforge ###
-pyenv install miniforge3-4.10.1-5
-pyenv global miniforge3-4.10.1-5
+pyenv install miniforge3-4.10.3-10
+pyenv global miniforge3-4.10.3-10
 
 # Enable auto_activate_base
 conda config --set auto_activate_base false
