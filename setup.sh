@@ -202,14 +202,14 @@ sleep 5
 ### End of System UI ###
 
 ### Trackpad ###
-# Enable tap to click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
-defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# # Enable tap to click
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+# defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+# defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Trackpad Scroll Direction
-defaults write -g com.apple.swipescrolldirection -int 0
+# # Trackpad Scroll Direction
+# defaults write -g com.apple.swipescrolldirection -int 0
 
 ### End of Trackpad ###
 
